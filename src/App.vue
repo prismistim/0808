@@ -15,7 +15,7 @@
   import Vue from 'vue'
   import Navibar from './components/Navibar.vue'
 
-  let ran = Math.floor( Math.random() * 4 )
+  let ran = Math.floor( Math.random() * 5 )
 
   export default {
     components: {
@@ -25,7 +25,8 @@
       return {
         hitokoto:  [
           "リンク踏んでくれた！うれしいです！",
-          "今日もゴミみたいに暑いですね。30℃越えやめてほしいです",
+          "今日もゴミみたいに暑いですね",
+          "お元気ですか？",
           "もう年を数えるのはやめます",
           "今日は猫の日だそうです",
         ],
