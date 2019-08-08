@@ -1,3 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,700&display=swap');
+@import './_reboot.css';
+@import './_animate.css';
+
 body{
-  
+  font-family: 'Roboto', 'Sawarabi Mincho', sans-serif;
+  color: #3f3f3f;
+}
+
+svg{
+  margin: 0 12px;
+}
+
+.header{
+  h1.header-title{
+    padding: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 20px;
+    margin-left: 20px;
+    color: #555555;
+    text-align: center;
+  }
+
+  .cake-field{
+    height: 400px;
+    text-align: center;
+    background-color: #ECECEC;
+
+    .words{
+      font-size: 1em;
+      font-family: 'Sawarabi Mincho', sans-serif;
+    }
+
+    .icon-cake{
+      margin-top: 11vw;
+      font-size: 70px;
+      vertical-align: middle;
+      color: #8888FF;
+      -webkit-animation: hue 5s infinite linear;
+    }
+  }
+}
+
+.navibar{
+  margin: 10px 0;
+  text-align: center;
+
+  a.navi-btn{
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #a0a0ff;
+    border: solid 1px #a0a0ff;
+  }
+
+  a.navi-btn:hover{
+    text-decoration: none;
+  }
+}
+
+.container{
+  width: 65%;
+  margin: 10px auto 10px;
+  padding: 20px;
+  border-radius: 5px;
+
+  h3.section-title{
+    padding: 20px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  h4.sub-section-title{
+    margin: 10px 0 0 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  p.description{
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    letter-spacing: 5px;
+  }
+
+  ul.news-field{
+    background: #F8F8F8;
+    list-style: none;
+    border-radius: 10px;
+    padding: 0;
+
+    li.news-item{
+      padding: 10px;
+      font-family: 'Sawarabi Mincho', sans-serif;
+
+      .news-date{
+        color: #888;
+        font-size: 0.8em;
+      }
+
+      .news-title{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  ul.todo-field{
+    list-style: none;
+    border-radius: 10px;
+    padding: 0;
+
+    li.todo-item{
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #F8F8F8;
+
+      span.todo-status{
+        display: inline-block;
+        width: 80px;
+        margin-right: 10px;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Noto Sans JP', sans-serif;
+        background: #fff;
+      }
+
+      .todo-title{
+        font-family: 'Sawarabi Mincho', sans-serif;
+      }
+    }
+  }
+
+  .happy-item{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F8F8F8;
+
+    span.wish-tag{
+      display: inline-block;
+      margin: 5px;
+      padding: 5px;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0;
+      background: #ECECEC;
+      border-radius: 5px;
+    }
+  }
+
+  .btn-field{
+    margin: 10px;
+    padding: 20px 0;
+    background-color: #F0F0F0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+    a.link-btn.twitter{
+      width: 100px;
+      height: 50px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #3fb9ff;
+
+      color: #fff;
+    }
+
+    a.link-btn.bandcamp{
+      width: 100px;
+      height: 50px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #3F3FFF;
+
+      color: #fff;
+    }
+
+    a.link-btn:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+  .jumbotron{
+    h2.jumbotron-text{
+      font-size: 7em;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+  .navibar{
+    margin: 10px 0;
+    text-align: center;
+
+    a.navi-btn{
+      width: 150px;
+    }
+  }
+
+  .jumbotron{
+    h2.jumbotron-text{
+      font-size: 3.5em;
+    }
+  }
+
+  .container{
+    width: 90%;
+
+    h3.section-title{
+      font-size: 1.5em;
+    }
+
+    ul{
+      li.list-item{
+        line-height: 1.4em;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .header{
+    .cake-field{
+      height: 200px;
+    }
+  }
+
+  .navibar{
+    margin: 10px 0;
+    text-align: center;
+
+    a.navi-btn{
+      width: 100px;
+    }
+  }
+
+  .jumbotron{
+    h2.jumbotron-text{
+      font-size: 3.5em;
+    }
+  }
+
+  .container{
+    width: 90%;
+    padding: 10px 20px;
+
+    h3.section-title{
+      font-size: 1.5em;
+    }
+
+    ul{
+      li.list-item{
+        line-height: 1.4em;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }
